@@ -53,7 +53,7 @@ Just send the message to OpenClaw:
 ```bash
 install https://github.com/wu-yc/LabClaw
 ```
-
+<p align="center"> <img src="./install_demo.gif" alt="Install Demo" width="30%"> </p>
 
 
 ## Repository Layout
