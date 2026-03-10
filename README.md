@@ -563,3 +563,8 @@ Skills curated by Yingcheng (Charles) Wu, Jinglin Jian, Zhe Zhao at Le Cong Lab 
 ## License
 
 [MIT License](LICENSE)
+
+
+## Star History
+
+[![Star History Chart](https://api.star-history.com/image?repos=wu-yc/LabClaw&type=date&legend=top-left)](https://www.star-history.com/?repos=wu-yc%2FLabClaw&type=date&legend=top-left)
