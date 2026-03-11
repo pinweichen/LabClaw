@@ -23,7 +23,8 @@
 <br>
 
 **☕ Support our research (Base):** `0x41060E28a182C2CA5ff66C6D3de70D90a9d83a98`
-**☕ Support our research (Solana):** 6MKtYQYvn7k6PiTEE3N22wu6LoB36XVC2SoRqdL3bFom
+
+**☕ Support our research (Solana):** `6MKtYQYvn7k6PiTEE3N22wu6LoB36XVC2SoRqdL3bFom`
 
 </div>
 
