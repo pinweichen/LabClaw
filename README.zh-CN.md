@@ -2,16 +2,16 @@
 
 <div align="center">
 
-**为 OpenClaw / LabOS 提供 211 个面向生物医学自主研究的生产级技能**
+**为 OpenClaw / LabOS 提供 240 个面向生物医学自主研究的生产级技能**
 
-[![Skills](https://img.shields.io/badge/skills-211-blue?style=flat-square)](skills/)
-[![Biology](https://img.shields.io/badge/🧬_biology-66-brightgreen?style=flat-square)](skills/bio/)
-[![LabOS](https://img.shields.io/badge/🤖_labos-7-cyan?style=flat-square)](skills/labos/)
+[![Skills](https://img.shields.io/badge/skills-240-blue?style=flat-square)](skills/)
+[![Biology](https://img.shields.io/badge/🧬_biology-86-brightgreen?style=flat-square)](skills/bio/)
 [![Vision](https://img.shields.io/badge/👁️_vision-5-yellow?style=flat-square)](skills/vision/)
 [![Pharmacy](https://img.shields.io/badge/💊_pharmacy-36-blueviolet?style=flat-square)](skills/pharma/)
-[![Medicine](https://img.shields.io/badge/🏥_medicine-20-red?style=flat-square)](skills/med/)
-[![General](https://img.shields.io/badge/⚙️_general-48-orange?style=flat-square)](skills/general/)
-[![Literature](https://img.shields.io/badge/📚_literature-29-purple?style=flat-square)](skills/literature/)
+[![Medicine](https://img.shields.io/badge/🏥_medicine-22-red?style=flat-square)](skills/med/)
+[![General](https://img.shields.io/badge/⚙️_general-54-orange?style=flat-square)](skills/general/)
+[![Literature](https://img.shields.io/badge/📚_literature-33-purple?style=flat-square)](skills/literature/)
+[![Visualization](https://img.shields.io/badge/📊_visualization-4-cyan?style=flat-square)](skills/visualization/)
 [![License](https://img.shields.io/badge/license-MIT-lightgrey?style=flat-square)](LICENSE)
 
 [English](README.md) · **简体中文**
@@ -25,7 +25,7 @@
 
 ## 项目简介
 
-LabClaw 将 **211 个生产级 `SKILL.md` 文件** 按照生物学、LabOS自动化、Vision/XR、药物发现、医学、数据科学与文献检索等方向进行组织，供 OpenClaw 兼容代理在生物医学研究中直接调用。每个技能都会告诉代理：**何时使用**、**如何调用**、以及**应该产出什么结果**。
+LabClaw 将 **240 个生产级 `SKILL.md` 文件** 按照生物学、Vision/XR、药物发现、医学、数据科学、文献检索与科学可视化等方向进行组织，供 OpenClaw 兼容代理在生物医学研究中直接调用。每个技能都会告诉代理：**何时使用**、**如何调用**、以及**应该产出什么结果**。
 
 这个仓库适合希望为代理提供可复用、可组合、面向研究任务的技能层的用户，而不是仅靠通用提示词完成复杂科研流程的场景。你可以把它当作完整的起始技能库，也可以只选用与你的实验室、项目或团队相关的部分。
 
@@ -33,13 +33,13 @@ LabClaw 将 **211 个生产级 `SKILL.md` 文件** 按照生物学、LabOS自动
 
 | 领域 | 技能数 | 重点方向 |
 |------|------:|----------|
-| [🧬 Biology & Life Sciences](skills/bio/) | **66** | 生物信息学、单细胞、基因组学、蛋白质组学、多组学、数据库 |
-| [🤖 LabOS & Automation](skills/labos/) | **7** | 实验室机器人、LIMS/ELN、云平台、协议管理 |
+| [🧬 Biology & Life Sciences](skills/bio/) | **86** | 生物信息学、单细胞、基因组学、蛋白质组学、多组学、数据库 |
 | [👁️ Vision & XR](skills/vision/) | **5** | 手部追踪、3D姿态估计、图像分割、Egocentric视觉 |
 | [💊 Pharmacy & Drug Discovery](skills/pharma/) | **36** | 化学信息学、分子机器学习、对接、靶点研究、药理学、药物数据库 |
-| [🏥 Medical & Clinical](skills/med/) | **20** | 临床试验、精准医疗、肿瘤学、传染病、医学影像 |
-| [⚙️ General & Data Science](skills/general/) | **48** | 统计分析、机器学习、数据管理、可视化、科学写作 |
-| [📚 Literature & Search](skills/literature/) | **29** | 学术检索、生物医学数据库、多源发现、专利、基金、引文 |
+| [🏥 Medical & Clinical](skills/med/) | **22** | 临床试验、精准医疗、肿瘤学、传染病、医学影像 |
+| [⚙️ General & Data Science](skills/general/) | **54** | 统计分析、机器学习、科学写作、质量控制 |
+| [📚 Literature & Search](skills/literature/) | **33** | 学术检索、生物医学数据库、多源发现、专利、基金、引文 |
+| [📊 Visualization](skills/visualization/) | **4** | 科学可视化、matplotlib、seaborn、plotly、出版级图表 |
 
 ## 代表性工作流
 
@@ -47,9 +47,9 @@ LabClaw 将 **211 个生产级 `SKILL.md` 文件** 按照生物学、LabOS自动
 |--------|----------|
 | 单细胞与空间组学 | [`anndata`](skills/bio/anndata/SKILL.md), [`scanpy`](skills/bio/scanpy/SKILL.md), [`tooluniverse-spatial-transcriptomics`](skills/bio/tooluniverse-spatial-transcriptomics/SKILL.md) |
 | 药物发现与分子设计 | [`rdkit`](skills/pharma/rdkit/SKILL.md), [`diffdock`](skills/pharma/diffdock/SKILL.md), [`tooluniverse-drug-repurposing`](skills/pharma/tooluniverse-drug-repurposing/SKILL.md) |
-| 临床与精准医疗 | [`clinical`](skills/med/clinical/SKILL.md), [`tooluniverse-precision-oncology`](skills/med/tooluniverse-precision-oncology/SKILL.md), [`clinicaltrials-database`](skills/literature/clinicaltrials-database/SKILL.md) |
-| 统计分析、机器学习与图形生成 | [`statistics`](skills/general/statistics/SKILL.md), [`scikit-learn`](skills/general/scikit-learn/SKILL.md), [`scientific-visualization`](skills/general/scientific-visualization/SKILL.md) |
-| 文献综述与科研写作 | [`pubmed-search`](skills/literature/pubmed-search/SKILL.md), [`citation-management`](skills/literature/citation-management/SKILL.md), [`scientific-writing`](skills/general/scientific-writing/SKILL.md) |
+| 临床与精准医疗 | [`clinical`](skills/med/clinical/SKILL.md), [`tooluniverse-precision-oncology`](skills/med/tooluniverse-precision-oncology/SKILL.md), [`clinicaltrials-database`](skills/med/clinicaltrials-database/SKILL.md) |
+| 统计分析、机器学习与图形生成 | [`statistics`](skills/general/statistics/SKILL.md), [`scikit-learn`](skills/general/scikit-learn/SKILL.md), [`scientific-visualization`](skills/visualization/scientific-visualization/SKILL.md) |
+| 文献综述与科研写作 | [`pubmed-search`](skills/literature/pubmed-search/SKILL.md), [`citation-management`](skills/literature/citation-management/SKILL.md), [`scientific-writing`](skills/literature/scientific-writing/SKILL.md) |
 
 ## 3秒快速开始
 
@@ -67,13 +67,13 @@ LabClaw/
 ├── README.md
 ├── README.zh-CN.md
 └── skills/
-    ├── bio/         # 66 个技能：基因组学、蛋白质组学、单细胞、系统生物学
-    ├── labos/       # 7 个技能：实验室机器人、LIMS/ELN、云平台、协议
-    ├── vision/      # 5 个技能：手部追踪、3D姿态、分割、Egocentric视觉
-    ├── pharma/      # 36 个技能：化学信息学、分子对接、靶点发现、药理学
-    ├── med/         # 20 个技能：临床研究、精准医疗、肿瘤学、影像
-    ├── general/     # 48 个技能：统计、机器学习、可视化、写作、可复现性
-    └── literature/  # 29 个技能：检索、数据库、基金、专利、引文
+    ├── bio/          # 86 个技能：基因组学、蛋白质组学、单细胞、系统生物学、数据库
+    ├── vision/       # 5 个技能：手部追踪、3D姿态、分割、Egocentric视觉
+    ├── pharma/       # 36 个技能：化学信息学、分子对接、靶点发现、药理学
+    ├── med/          # 22 个技能：临床研究、精准医疗、肿瘤学、影像
+    ├── general/      # 54 个技能：统计、机器学习、写作、可复现性、质量控制
+    ├── literature/   # 33 个技能：检索、数据库、基金、专利、引文
+    └── visualization/ # 4 个技能：科学可视化、matplotlib、seaborn、plotly
 ```
 
 ## 相关仓库
@@ -94,11 +94,11 @@ LabClaw/
 ---
 
 <details>
-<summary><strong>🧬 Biology & Life Sciences（生命科学与生物学） — 66 个技能</strong></summary>
+<summary><strong>🧬 Biology & Life Sciences（生命科学与生物学） — 86 个技能</strong></summary>
 
 > 面向基因组学、转录组学、蛋白质组学、单细胞分析、结构生物学、系统生物学与实验自动化的工具。
 
-**66 个技能** &nbsp;·&nbsp; [`skills/bio/`](skills/bio/)
+**86 个技能** &nbsp;·&nbsp; [`skills/bio/`](skills/bio/)
 
 #### 生物信息学基础
 
@@ -344,11 +344,11 @@ LabClaw/
 </details>
 
 <details>
-<summary><strong>🏥 Medical & Clinical（医学与临床） — 20 个技能</strong></summary>
+<summary><strong>🏥 Medical & Clinical（医学与临床） — 22 个技能</strong></summary>
 
 > 面向临床研究、精准医疗、肿瘤学、传染病与医学影像的工具。
 
-**20 个技能** &nbsp;·&nbsp; [`skills/med/`](skills/med/)
+**22 个技能** &nbsp;·&nbsp; [`skills/med/`](skills/med/)
 
 #### 临床研究与试验
 
@@ -388,11 +388,11 @@ LabClaw/
 </details>
 
 <details>
-<summary><strong>⚙️ General & Data Science（通用与数据科学） — 48 个技能</strong></summary>
+<summary><strong>⚙️ General & Data Science（通用与数据科学） — 54 个技能</strong></summary>
 
 > 面向统计分析、机器学习、数据管理、可视化与科学写作的通用工具。
 
-**48 个技能** &nbsp;·&nbsp; [`skills/general/`](skills/general/)
+**54 个技能** &nbsp;·&nbsp; [`skills/general/`](skills/general/)
 
 #### 统计学与数学建模
 
@@ -475,11 +475,11 @@ LabClaw/
 </details>
 
 <details>
-<summary><strong>📚 Literature & Search（文献与检索） — 29 个技能</strong></summary>
+<summary><strong>📚 Literature & Search（文献与检索） — 33 个技能</strong></summary>
 
 > 面向学术检索、数据库查询、引文管理与综述写作的工具。
 
-**29 个技能** &nbsp;·&nbsp; [`skills/literature/`](skills/literature/)
+**33 个技能** &nbsp;·&nbsp; [`skills/literature/`](skills/literature/)
 
 #### 生物医学文献检索
 

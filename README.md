@@ -8,14 +8,14 @@
 
 **Powering dry-lab reasoning, protocol composition, and agentic workflows to close the loop with LabOS XR/wet-lab execution.**
 
-[![Skills](https://img.shields.io/badge/skills-211-blue?style=flat-square)](skills/)
-[![Biology](https://img.shields.io/badge/🧬_biology-66-brightgreen?style=flat-square)](skills/bio/)
-[![LabOS](https://img.shields.io/badge/🤖_labos-7-cyan?style=flat-square)](skills/labos/)
+[![Skills](https://img.shields.io/badge/skills-240-blue?style=flat-square)](skills/)
+[![Biology](https://img.shields.io/badge/🧬_biology-86-brightgreen?style=flat-square)](skills/bio/)
 [![Vision](https://img.shields.io/badge/👁️_vision-5-yellow?style=flat-square)](skills/vision/)
 [![Pharmacy](https://img.shields.io/badge/💊_pharmacy-36-blueviolet?style=flat-square)](skills/pharma/)
-[![Medicine](https://img.shields.io/badge/🏥_medicine-20-red?style=flat-square)](skills/med/)
-[![General](https://img.shields.io/badge/⚙️_general-48-orange?style=flat-square)](skills/general/)
-[![Literature](https://img.shields.io/badge/📚_literature-29-purple?style=flat-square)](skills/literature/)
+[![Medicine](https://img.shields.io/badge/🏥_medicine-22-red?style=flat-square)](skills/med/)
+[![General](https://img.shields.io/badge/⚙️_general-54-orange?style=flat-square)](skills/general/)
+[![Literature](https://img.shields.io/badge/📚_literature-33-purple?style=flat-square)](skills/literature/)
+[![Visualization](https://img.shields.io/badge/📊_visualization-4-cyan?style=flat-square)](skills/visualization/)
 [![License](https://img.shields.io/badge/license-MIT-lightgrey?style=flat-square)](LICENSE)
 
 **English** · [简体中文](README.zh-CN.md)  · [Project](https://labclaw-ai.github.io/)
@@ -38,7 +38,7 @@ LabClaw is a skill library, not a monolithic software package. You can install t
 
 ## Overview
 
-LabClaw packages **211 production-ready `SKILL.md` files** for biomedical AI workflows across biology, lab automation, vision/XR, drug discovery, medicine, data science, and literature research. Each skill teaches an OpenClaw-compatible agent **when** to use a tool, **how** to call it, and **what kind of output** to produce.
+LabClaw packages **240 production-ready `SKILL.md` files** for biomedical AI workflows across biology, lab automation, vision/XR, drug discovery, medicine, data science, literature research, and scientific visualization. Each skill teaches an OpenClaw-compatible agent **when** to use a tool, **how** to call it, and **what kind of output** to produce.
 
 The collection is designed for researchers who want a practical, modular skill layer instead of a generic prompt bundle. You can use it as a broad starter library, or cherry-pick only the subfolders relevant to your lab, team, or project.
 
@@ -46,13 +46,13 @@ The collection is designed for researchers who want a practical, modular skill l
 
 | Domain | Skills | Focus |
 |--------|-------:|-------|
-| [🧬 Biology & Life Sciences](skills/bio/) | **66** | Bioinformatics, single-cell, genomics, proteomics, multi-omics, databases |
-| [🤖 LabOS & Automation](skills/labos/) | **7** | Lab robots, LIMS/ELN, cloud platforms, protocol management |
+| [🧬 Biology & Life Sciences](skills/bio/) | **86** | Bioinformatics, single-cell, genomics, proteomics, multi-omics, databases |
 | [👁️ Vision & XR](skills/vision/) | **5** | Hand tracking, 3D pose estimation, segmentation, egocentric vision |
 | [💊 Pharmacy & Drug Discovery](skills/pharma/) | **36** | Cheminformatics, molecular ML, docking, target research, pharmacology, drug databases |
-| [🏥 Medical & Clinical](skills/med/) | **20** | Clinical trials, precision medicine, oncology, infectious disease, medical imaging |
-| [⚙️ General & Data Science](skills/general/) | **48** | Statistics, machine learning, data management, visualization, scientific writing |
-| [📚 Literature & Search](skills/literature/) | **29** | Academic search, biomedical databases, multi-source discovery, patents, grants, citations |
+| [🏥 Medical & Clinical](skills/med/) | **22** | Clinical trials, precision medicine, oncology, infectious disease, medical imaging |
+| [⚙️ General & Data Science](skills/general/) | **54** | Statistics, machine learning, data management, scientific writing, quality control |
+| [📚 Literature & Search](skills/literature/) | **33** | Academic search, biomedical databases, multi-source discovery, patents, grants, citations |
+| [📊 Visualization](skills/visualization/) | **4** | Scientific visualization, matplotlib, seaborn, plotly, publication-ready figures |
 
 ## Representative Workflows
 
@@ -60,9 +60,9 @@ The collection is designed for researchers who want a practical, modular skill l
 |----------|----------------|
 | Single-cell and spatial omics | [`anndata`](skills/bio/anndata/SKILL.md), [`scanpy`](skills/bio/scanpy/SKILL.md), [`tooluniverse-spatial-transcriptomics`](skills/bio/tooluniverse-spatial-transcriptomics/SKILL.md) |
 | Drug discovery and molecular design | [`rdkit`](skills/pharma/rdkit/SKILL.md), [`diffdock`](skills/pharma/diffdock/SKILL.md), [`tooluniverse-drug-repurposing`](skills/pharma/tooluniverse-drug-repurposing/SKILL.md) |
-| Clinical and precision medicine | [`clinical`](skills/med/clinical/SKILL.md), [`tooluniverse-precision-oncology`](skills/med/tooluniverse-precision-oncology/SKILL.md), [`clinicaltrials-database`](skills/literature/clinicaltrials-database/SKILL.md) |
-| Statistics, ML, and figure generation | [`statistics`](skills/general/statistics/SKILL.md), [`scikit-learn`](skills/general/scikit-learn/SKILL.md), [`scientific-visualization`](skills/general/scientific-visualization/SKILL.md) |
-| Literature review and reporting | [`pubmed-search`](skills/literature/pubmed-search/SKILL.md), [`citation-management`](skills/literature/citation-management/SKILL.md), [`scientific-writing`](skills/general/scientific-writing/SKILL.md) |
+| Clinical and precision medicine | [`clinical`](skills/med/clinical/SKILL.md), [`tooluniverse-precision-oncology`](skills/med/tooluniverse-precision-oncology/SKILL.md), [`clinicaltrials-database`](skills/med/clinicaltrials-database/SKILL.md) |
+| Statistics, ML, and figure generation | [`statistics`](skills/general/statistics/SKILL.md), [`scikit-learn`](skills/general/scikit-learn/SKILL.md), [`scientific-visualization`](skills/visualization/scientific-visualization/SKILL.md) |
+| Literature review and reporting | [`pubmed-search`](skills/literature/pubmed-search/SKILL.md), [`citation-management`](skills/literature/citation-management/SKILL.md), [`scientific-writing`](skills/literature/scientific-writing/SKILL.md) |
 
 ## 3-Second Quick Start
 
@@ -88,13 +88,13 @@ LabClaw/
 ├── README.md
 ├── README.zh-CN.md
 └── skills/
-    ├── bio/         # 66 skills: genomics, proteomics, single-cell, systems biology
-    ├── labos/       # 7 skills: lab robots, LIMS/ELN, cloud platforms, protocols
-    ├── vision/      # 5 skills: hand tracking, 3D pose, segmentation, egocentric
-    ├── pharma/      # 36 skills: cheminformatics, docking, target discovery, pharmacology
-    ├── med/         # 20 skills: clinical research, precision medicine, oncology, imaging
-    ├── general/     # 48 skills: statistics, ML, visualization, writing, reproducibility
-    └── literature/  # 29 skills: search, databases, grants, patents, citations
+    ├── bio/          # 86 skills: genomics, proteomics, single-cell, systems biology, databases
+    ├── vision/       # 5 skills: hand tracking, 3D pose, segmentation, egocentric
+    ├── pharma/       # 36 skills: cheminformatics, docking, target discovery, pharmacology
+    ├── med/          # 22 skills: clinical research, precision medicine, oncology, imaging
+    ├── general/      # 54 skills: statistics, ML, writing, reproducibility, quality control
+    ├── literature/   # 33 skills: search, databases, grants, patents, citations
+    └── visualization/ # 4 skills: scientific visualization, matplotlib, seaborn, plotly
 ```
 
 ## Related Repositories
